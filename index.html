@@ -16,9 +16,17 @@
                         center: true,
                     },
                     colors: {
-                        themeBlack: '#111111',
-                        themeBtn: '#179800',
-                    }
+                        black11: '#111111',
+                        greenBtn: '#179800',
+                    },
+                    fontSize: {
+                        font56: '56px',
+                        font20: '20px',
+                    },
+                    lineHeight: {
+                        lh60: '60px',
+                        lh28: '28px',
+                    },
                 }
             }
         }
@@ -28,18 +36,18 @@
 <body>
     
     <Header id="head">
-        <div class="header-wrap ">
-            <div class="navbar-wrap bg-[#EFEBE3]">
+        <div class="header-wrap bg-gradient-to-t from-[#EFEBE3] to-[#ffffff]">
+            <div class="navbar-wrap">
                 <div class="container">
-                    <nav class="flex justify-between items-center min-h-[110px]">
+                    <nav class="flex justify-between items-center min-h-[110px] px-5 md:px-0">
                         <div class="logo basis-1/3">
                             <a href="index.html"><img src="assets/logo-header.png" alt=""></a>
                         </div>
                         <div class="basis-1/3 menu-wrap hidden lg:block">
                             <ul class="header-menu flex justify-center">
-                                <li><a class="p-4 text-themeBlack text-xl " href="#">Product</a></li>
-                                <li><a class="p-4 text-themeBlack text-xl " href="#">Services</a></li>
-                                <li><a class="p-4 text-themeBlack text-xl " href="#">Contact Us</a></li>
+                                <li><a class="p-4 text-black11 text-xl " href="#">Product</a></li>
+                                <li><a class="p-4 text-black11 text-xl " href="#">Services</a></li>
+                                <li><a class="p-4 text-black11 text-xl " href="#">Contact Us</a></li>
                             </ul>
                         </div>
                         <div class="basis-1/3 desktop-mobile-cta">
@@ -59,14 +67,14 @@
                                     </div>
                                     <div class="header-btn">
                                         <ul class="header-cta-btn flex justify-between gap-3">
-                                            <li><a class="px-7 py-[10px] rounded-lg border border-themeBtn text-themeBlack text-xl" href="#">Login</a></li>
-                                            <li><a class="px-7 py-[10px] rounded-lg border border-themeBtn bg-[#179800] text-xl text-white" href="#">Register</a></li>
+                                            <li><a class="px-7 py-[10px] rounded-lg border border-greenBtn text-black11 text-xl" href="#">Login</a></li>
+                                            <li><a class="px-7 py-[10px] rounded-lg border border-greenBtn bg-[#179800] text-xl text-white" href="#">Register</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mobile-icons lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-themeBlack">
+                            <div class="mobile-icons flex justify-end lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-greenBtn">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg>
                             </div>
@@ -75,8 +83,18 @@
                 </div>
             </div>
 
-            <div class="banner-wrap">
-
+            <div class="banner-wrap mt-12 md:mt-24">
+                <div class="container">
+                    <div class="banner-container text-center max-w-[1031px] mx-auto">
+                        <div class="banner-content max-w-[827px] mx-auto px-5 md:px-0 mb-4 md:mb-8">
+                            <h2 class="text-black11 text-3xl md:text-font56 md:font-semibold leading-tight mb-4 md:mb-8">Freshness <span class="text-greenBtn">You Can Count</span> On, Prices You’ll Love!</h2>
+                            <p class="text-black11 text-base md:text-font20 leading-normal">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                        </div>
+                        <div class="banner-img">
+                            <img class="w-full" src="assets/hero-vegetables.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </Header>
